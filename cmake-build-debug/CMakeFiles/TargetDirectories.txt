@@ -1,3 +1,11 @@
 D:/5b_vector/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/5b_vector/cmake-build-debug/CMakeFiles/5b_vector.dir
 D:/5b_vector/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/5b_vector/cmake-build-debug/libs/CMakeFiles/edit_cache.dir
+D:/5b_vector/cmake-build-debug/libs/CMakeFiles/rebuild_cache.dir
+D:/5b_vector/cmake-build-debug/libs/data_strustures/CMakeFiles/data_strustures.dir
+D:/5b_vector/cmake-build-debug/libs/data_strustures/CMakeFiles/edit_cache.dir
+D:/5b_vector/cmake-build-debug/libs/data_strustures/CMakeFiles/rebuild_cache.dir
+D:/5b_vector/cmake-build-debug/libs/algorithms/CMakeFiles/algorithms.dir
+D:/5b_vector/cmake-build-debug/libs/algorithms/CMakeFiles/edit_cache.dir
+D:/5b_vector/cmake-build-debug/libs/algorithms/CMakeFiles/rebuild_cache.dir

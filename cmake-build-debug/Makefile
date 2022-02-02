@@ -128,6 +128,32 @@ depend:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\5b_vector.dir\build.make CMakeFiles/5b_vector.dir/build
 .PHONY : 5b_vector/fast
 
+#=============================================================================
+# Target rules for targets named data_strustures
+
+# Build rule for target.
+data_strustures: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 data_strustures
+.PHONY : data_strustures
+
+# fast build rule for target.
+data_strustures/fast:
+	$(MAKE) $(MAKESILENT) -f libs\data_strustures\CMakeFiles\data_strustures.dir\build.make libs/data_strustures/CMakeFiles/data_strustures.dir/build
+.PHONY : data_strustures/fast
+
+#=============================================================================
+# Target rules for targets named algorithms
+
+# Build rule for target.
+algorithms: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 algorithms
+.PHONY : algorithms
+
+# fast build rule for target.
+algorithms/fast:
+	$(MAKE) $(MAKESILENT) -f libs\algorithms\CMakeFiles\algorithms.dir\build.make libs/algorithms/CMakeFiles/algorithms.dir/build
+.PHONY : algorithms/fast
+
 libs/algorithms/algorithm.obj: libs/algorithms/algorithm.c.obj
 .PHONY : libs/algorithms/algorithm.obj
 
@@ -233,6 +259,8 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... 5b_vector
+	@echo ... algorithms
+	@echo ... data_strustures
 	@echo ... libs/algorithms/algorithm.obj
 	@echo ... libs/algorithms/algorithm.i
 	@echo ... libs/algorithms/algorithm.s

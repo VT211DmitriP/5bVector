@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/5b_vector/libs/algorithms/algorithm.c
+
+D:/5b_vector/libs/algorithms/array/array.c
+stdio.h
+-
+limits.h
+-
+assert.h
+-
+array.h
+D:/5b_vector/libs/algorithms/array/array.h
+
+D:/5b_vector/libs/algorithms/array/array.h
+stddef.h
+-
+

@@ -132,6 +132,8 @@ CMakeFiles/5b_vector.dir/libs/data_strustures/vector/vector.c.s: cmake_force
 5b_vector.exe: CMakeFiles/5b_vector.dir/libs/algorithms/algorithm.c.obj
 5b_vector.exe: CMakeFiles/5b_vector.dir/libs/data_strustures/vector/vector.c.obj
 5b_vector.exe: CMakeFiles/5b_vector.dir/build.make
+5b_vector.exe: libs/data_strustures/libdata_strustures.a
+5b_vector.exe: libs/algorithms/libalgorithms.a
 5b_vector.exe: CMakeFiles/5b_vector.dir/linklibs.rsp
 5b_vector.exe: CMakeFiles/5b_vector.dir/objects1.rsp
 5b_vector.exe: CMakeFiles/5b_vector.dir/link.txt

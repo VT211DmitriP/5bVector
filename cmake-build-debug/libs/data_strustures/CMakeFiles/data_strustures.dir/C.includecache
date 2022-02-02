@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/5b_vector/libs/data_strustures/vector/vector.c
+stdio.h
+-
+vector.h
+D:/5b_vector/libs/data_strustures/vector/vector.h
+assert.h
+D:/5b_vector/libs/data_strustures/vector/assert.h
+stdint.h
+-
+malloc.h
+-
+
+D:/5b_vector/libs/data_strustures/vector/vector.h
+
