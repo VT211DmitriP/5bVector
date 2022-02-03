@@ -11,6 +11,14 @@ stddef.h
 -
 
 D:/5b_vector/libs/data_strustures/vector/vector.h
+stdbool.h
+-
+stdio.h
+-
+assert.h
+-
+../../algorithms/array/array.h
+D:/5b_vector/libs/algorithms/array/array.h
 
 D:/5b_vector/main.c
 stdio.h

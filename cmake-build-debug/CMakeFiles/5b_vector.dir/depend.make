@@ -7,6 +7,7 @@ CMakeFiles/5b_vector.dir/libs/algorithms/array/array.c.obj: \
  ../libs/algorithms/array/array.c \
  ../libs/algorithms/array/array.h
 CMakeFiles/5b_vector.dir/libs/data_strustures/vector/vector.c.obj: \
+ ../libs/algorithms/array/array.h \
  ../libs/data_strustures/vector/vector.c \
  ../libs/data_strustures/vector/vector.h
 CMakeFiles/5b_vector.dir/main.c.obj: \

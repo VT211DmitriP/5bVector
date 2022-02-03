@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "vector.h"
-#include "assert.h"
 #include <stdint.h>
 #include <malloc.h>
 
@@ -18,9 +17,9 @@ void reserve(vector *v, size_t newCapacity) {
         v->data = NULL;
     else if (newCapacity < v->size) {
         v->size = newCapacity;
-    }
-    else {
+    } else {
         v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
+        v->capacity = newCapacity;
         if (v->data == NULL) {
             fprintf(stderr, "bad alloc");
             exit(1);
@@ -38,4 +37,43 @@ void shrinkToFit(vector *v) {
 
 void deleteVector(vector *v) {
     free(v->data);
+}
+
+bool isEmpty(vector *v) {
+    return v->size == 0;
+}
+
+bool isFull(vector *v) {
+    return v->size == v->capacity;
+}
+
+
+int getVectorValue(vector *v, size_t i) {
+    return v->data[i];
+}
+
+void pushBack(vector *v, int x) {
+    if (v->capacity == 0)
+        reserve(v, 1);
+    else if (isFull(v))
+        reserve(v, v->capacity * 2);
+    append_(v->data, &v->size, x);
+}
+
+void popBack(vector *v) {
+    if (isEmpty(v)) {
+        fprintf(stderr, "the vector is empty");
+        exit(1);
+    }
+    (v->size)--;
+}
+
+void vector_print(vector v) {
+    printf("{");
+    for (int i = 0; i < v.size; i++)
+        printf("%d, ", v.data[i]);
+    if (v.size == 0)
+        printf("}");
+    else
+        printf("\b\b}\n");
 }

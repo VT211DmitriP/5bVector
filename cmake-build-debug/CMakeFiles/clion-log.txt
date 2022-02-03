@@ -1,13 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\5b_vector
-CMake Error at libs/CMakeLists.txt:1 (add_subdirectory):
-  add_subdirectory given source "data_structures" which is not an existing
-  directory.
-
-
-CMake Error at CMakeLists.txt:9 (target_link_libraries):
-  Cannot specify link libraries for target "testliberaly" which is not built
-  by this project.
-
-
--- Configuring incomplete, errors occurred!
-See also "D:/5b_vector/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/5b_vector/cmake-build-debug
