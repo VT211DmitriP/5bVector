@@ -1,6 +1,7 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <assert.h>
+
 #include "../../algorithms/array/array.h"
 
 #ifndef INC_5B_VECTOR_VECTOR_H
@@ -44,7 +45,14 @@ void pushBack(vector *v, int x);
 // удаляет последний элемент из вектора v
 void popBack(vector *v);
 
+//
+int* atVector(vector *v, size_t index);
 
+//
+int* back(vector *v);
+
+//
+int* front(vector *v);
 
 // вывод вектора v
 void vector_print(vector v);

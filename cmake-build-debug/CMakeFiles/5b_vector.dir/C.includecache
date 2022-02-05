@@ -21,12 +21,6 @@ assert.h
 D:/5b_vector/libs/algorithms/array/array.h
 
 D:/5b_vector/main.c
-stdio.h
--
-stdint.h
--
-libs/algorithms/array/array.h
-D:/5b_vector/libs/algorithms/array/array.h
 libs/data_strustures/vector/vector.h
 D:/5b_vector/libs/data_strustures/vector/vector.h
 
