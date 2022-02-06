@@ -1,7 +1,8 @@
 #include <stdio.h>
-#include "vector.h"
 #include <stdint.h>
 #include <malloc.h>
+
+#include "vector.h"
 
 vector createVector(size_t n) {
     int *v = malloc(sizeof(int) * n);
@@ -17,6 +18,7 @@ void reserve(vector *v, size_t newCapacity) {
         v->data = NULL;
     else if (newCapacity < v->size) {
         v->size = newCapacity;
+        v->capacity = newCapacity;
     } else {
         v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
         v->capacity = newCapacity;
@@ -47,7 +49,6 @@ bool isFull(vector *v) {
     return v->size == v->capacity;
 }
 
-
 int getVectorValue(vector *v, size_t i) {
     return v->data[i];
 }
@@ -68,7 +69,6 @@ void popBack(vector *v) {
     (v->size)--;
 }
 
-
 int* atVector(vector *v, size_t index) {
     if (index >= v->size) {
         fprintf(stderr, "IndexError: a[%zu] is not exists", index);
@@ -84,7 +84,6 @@ int* back(vector *v) {
 int* front(vector *v) {
     return atVector(v, 0);
 }
-
 
 void vector_print(vector v) {
     printf("{");
