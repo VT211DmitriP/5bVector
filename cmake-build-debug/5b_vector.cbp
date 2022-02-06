@@ -167,6 +167,12 @@
 		<Unit filename="D:/5b_vector/libs/data_strustures/vector/vector.h">
 			<Option target="5b_vector"/>
 		</Unit>
+		<Unit filename="D:/5b_vector/libs/data_strustures/vector/vectorVoid.c">
+			<Option target="data_strustures"/>
+		</Unit>
+		<Unit filename="D:/5b_vector/libs/data_strustures/vector/vectorVoid.h">
+			<Option target="data_strustures"/>
+		</Unit>
 		<Unit filename="D:/5b_vector/main.c">
 			<Option target="5b_vector"/>
 		</Unit>

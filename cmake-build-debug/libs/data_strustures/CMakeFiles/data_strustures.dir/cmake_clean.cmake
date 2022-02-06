@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/data_strustures.dir/vector/vector.c.obj"
+  "CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj"
   "libdata_strustures.a"
   "libdata_strustures.pdb"
 )

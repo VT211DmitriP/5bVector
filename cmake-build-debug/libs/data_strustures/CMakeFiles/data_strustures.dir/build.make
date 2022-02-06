@@ -78,17 +78,32 @@ libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vector.c.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_strustures.dir/vector/vector.c.s"
 	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\5b_vector\libs\data_strustures\vector\vector.c -o CMakeFiles\data_strustures.dir\vector\vector.c.s
 
+libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj: libs/data_strustures/CMakeFiles/data_strustures.dir/flags.make
+libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj: ../libs/data_strustures/vector/vectorVoid.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\5b_vector\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj"
+	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\data_strustures.dir\vector\vectorVoid.c.obj -c D:\5b_vector\libs\data_strustures\vector\vectorVoid.c
+
+libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_strustures.dir/vector/vectorVoid.c.i"
+	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\5b_vector\libs\data_strustures\vector\vectorVoid.c > CMakeFiles\data_strustures.dir\vector\vectorVoid.c.i
+
+libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_strustures.dir/vector/vectorVoid.c.s"
+	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\5b_vector\libs\data_strustures\vector\vectorVoid.c -o CMakeFiles\data_strustures.dir\vector\vectorVoid.c.s
+
 # Object files for target data_strustures
 data_strustures_OBJECTS = \
-"CMakeFiles/data_strustures.dir/vector/vector.c.obj"
+"CMakeFiles/data_strustures.dir/vector/vector.c.obj" \
+"CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj"
 
 # External object files for target data_strustures
 data_strustures_EXTERNAL_OBJECTS =
 
 libs/data_strustures/libdata_strustures.a: libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vector.c.obj
+libs/data_strustures/libdata_strustures.a: libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj
 libs/data_strustures/libdata_strustures.a: libs/data_strustures/CMakeFiles/data_strustures.dir/build.make
 libs/data_strustures/libdata_strustures.a: libs/data_strustures/CMakeFiles/data_strustures.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\5b_vector\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libdata_strustures.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\5b_vector\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libdata_strustures.a"
 	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && $(CMAKE_COMMAND) -P CMakeFiles\data_strustures.dir\cmake_clean_target.cmake
 	cd /d D:\5b_vector\cmake-build-debug\libs\data_strustures && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\data_strustures.dir\link.txt --verbose=$(VERBOSE)
 

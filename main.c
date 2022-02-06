@@ -1,4 +1,5 @@
 #include "libs/data_strustures/vector/vector.h"
+#include "libs/data_strustures/vector/vectorVoid.h"
 
 void test_reserve_theSizeIsLargerThanTheCapacity() {
     vector v = createVector(5);
@@ -243,6 +244,7 @@ void test() {
 
 int main() {
     test();
+    vectorVoid v;
 
     return 0;
 }
