@@ -20,7 +20,21 @@ assert.h
 ../../algorithms/array/array.h
 D:/5b_vector/libs/algorithms/array/array.h
 
+D:/5b_vector/libs/data_strustures/vector/vectorVoid.h
+stdbool.h
+-
+stdio.h
+-
+assert.h
+-
+limits.h
+-
+../../algorithms/array/array.h
+D:/5b_vector/libs/algorithms/array/array.h
+
 D:/5b_vector/main.c
 libs/data_strustures/vector/vector.h
 D:/5b_vector/libs/data_strustures/vector/vector.h
+libs/data_strustures/vector/vectorVoid.h
+D:/5b_vector/libs/data_strustures/vector/vectorVoid.h
 

@@ -244,7 +244,7 @@ void test() {
 
 int main() {
     test();
-    vectorVoid v;
+    vectorVoid v =  createVectorV (0 , sizeof(int));
 
     return 0;
 }

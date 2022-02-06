@@ -5,3 +5,7 @@ libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vector.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_strustures/vector/vector.c \
  ../libs/data_strustures/vector/vector.h
+libs/data_strustures/CMakeFiles/data_strustures.dir/vector/vectorVoid.c.obj: \
+ ../libs/algorithms/array/array.h \
+ ../libs/data_strustures/vector/vectorVoid.c \
+ ../libs/data_strustures/vector/vectorVoid.h

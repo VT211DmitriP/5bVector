@@ -13,4 +13,5 @@ CMakeFiles/5b_vector.dir/libs/data_strustures/vector/vector.c.obj: \
 CMakeFiles/5b_vector.dir/main.c.obj: \
  ../libs/algorithms/array/array.h \
  ../libs/data_strustures/vector/vector.h \
+ ../libs/data_strustures/vector/vectorVoid.h \
  ../main.c
