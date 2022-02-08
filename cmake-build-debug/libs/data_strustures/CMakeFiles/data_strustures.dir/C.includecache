@@ -37,6 +37,8 @@ stdint.h
 -
 malloc.h
 -
+string.h
+-
 vectorVoid.h
 D:/5b_vector/libs/data_strustures/vector/vectorVoid.h
 

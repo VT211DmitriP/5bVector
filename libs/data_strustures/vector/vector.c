@@ -4,28 +4,31 @@
 
 #include "vector.h"
 
+static void badAllocV() {
+    fprintf(stderr, "bad alloc");
+    exit(1);
+}
+
 vector createVector(size_t n) {
-    int *v = malloc(sizeof(int) * n);
+    int *v = (int *) malloc(sizeof(int) * n);
     if (v == NULL) {
-        fprintf(stderr, "bad alloc");
-        exit(1);
+        badAllocV();
     }
     return (vector) {v, 0, n};
 }
 
 void reserve(vector *v, size_t newCapacity) {
-    if (newCapacity == 0)
+    if (newCapacity == 0) {
         v->data = NULL;
+        return;
+    }
     else if (newCapacity < v->size) {
         v->size = newCapacity;
-        v->capacity = newCapacity;
-    } else {
-        v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
-        v->capacity = newCapacity;
-        if (v->data == NULL) {
-            fprintf(stderr, "bad alloc");
-            exit(1);
-        }
+    }
+    v->data = (int *) realloc(v->data, sizeof(int) * newCapacity);
+    v->capacity = newCapacity;
+    if (v->data == NULL) {
+        badAllocV();
     }
 }
 
@@ -38,7 +41,7 @@ void shrinkToFit(vector *v) {
 }
 
 void deleteVector(vector *v) {
-    free(v->data);
+    reserve(v, 0);
 }
 
 bool isEmpty(vector *v) {
@@ -63,10 +66,9 @@ void pushBack(vector *v, int x) {
 
 void popBack(vector *v) {
     if (isEmpty(v)) {
-        fprintf(stderr, "the vector is empty");
-        exit(1);
+        badAllocV();
     }
-    (v->size)--;
+    v->size--;
 }
 
 int* atVector(vector *v, size_t index) {

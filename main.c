@@ -1,5 +1,6 @@
 #include "libs/data_strustures/vector/vector.h"
 #include "libs/data_strustures/vector/vectorVoid.h"
+#include <malloc.h>
 
 void test_reserve_theSizeIsLargerThanTheCapacity() {
     vector v = createVector(5);
@@ -9,7 +10,7 @@ void test_reserve_theSizeIsLargerThanTheCapacity() {
     pushBack(&v, 4);
     pushBack(&v, 5);
 
-    reserve(&v,3);
+    reserve(&v, 3);
 
     assert(v.size == 3);
     assert(v.capacity == 3);
@@ -25,7 +26,7 @@ void test_reserve_emptyVector() {
     pushBack(&v, 4);
     pushBack(&v, 5);
 
-    reserve(&v,0);
+    reserve(&v, 0);
 
     assert(v.data == NULL);
 
@@ -40,7 +41,7 @@ void test_reserve_notEmptyVector() {
     pushBack(&v, 4);
     pushBack(&v, 5);
 
-    reserve(&v,10);
+    reserve(&v, 10);
 
     assert(v.size == 5);
     assert(v.capacity == 10);
@@ -244,7 +245,6 @@ void test() {
 
 int main() {
     test();
-    vectorVoid v =  createVectorV (0 , sizeof(int));
 
     return 0;
 }
