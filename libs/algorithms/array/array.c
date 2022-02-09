@@ -122,7 +122,3 @@ size_t binarySearchMoreOrEqual_(const int *a, size_t n, int x) {
     }
     return right;
 }
-
-
-
-

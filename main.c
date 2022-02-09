@@ -1,6 +1,5 @@
 #include "libs/data_strustures/vector/vector.h"
 #include "libs/data_strustures/vector/vectorVoid.h"
-#include <malloc.h>
 
 void test_reserve_theSizeIsLargerThanTheCapacity() {
     vector v = createVector(5);

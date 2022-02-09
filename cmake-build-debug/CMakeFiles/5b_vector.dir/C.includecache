@@ -10,16 +10,6 @@ D:/5b_vector/libs/algorithms/array/array.h
 stddef.h
 -
 
-D:/5b_vector/libs/data_strustures/vector/vector.c
-stdio.h
--
-stdint.h
--
-malloc.h
--
-vector.h
-D:/5b_vector/libs/data_strustures/vector/vector.h
-
 D:/5b_vector/libs/data_strustures/vector/vector.h
 stdbool.h
 -
@@ -47,6 +37,4 @@ libs/data_strustures/vector/vector.h
 D:/5b_vector/libs/data_strustures/vector/vector.h
 libs/data_strustures/vector/vectorVoid.h
 D:/5b_vector/libs/data_strustures/vector/vectorVoid.h
-malloc.h
--
 

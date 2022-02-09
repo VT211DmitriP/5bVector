@@ -77,8 +77,3 @@ void pushBackV(vectorVoid *v, void *source) {
         reserveV(v, v->capacity * 2);
     setVectorValueV(v, v->size++, source);
 }
-
-
-
-
-
