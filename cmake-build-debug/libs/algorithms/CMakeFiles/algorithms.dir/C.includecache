@@ -6,8 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/5b_vector/libs/algorithms/algorithm.c
-
 D:/5b_vector/libs/algorithms/array/array.c
 stdio.h
 -
